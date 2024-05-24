@@ -64,8 +64,21 @@ int myArray []={1,2,3,4,5};
 char anotherArray []= {'A','B','C'};
         System.out.println(anotherArray);
 
+-------------------------------------------------------------------------------------------------------------------
 
-
+public class Variables2 {
+    public static void main(String[] args) {
+        int i =1;
+        double d = 1.2;
+        
+        // alternatives, with capital letters then we have classes, which gives us wide options to use methods
+        
+        Integer i1 = 1;
+        Double d1 =1.2; //  Double d2 = new Double ( 1.2);
+        
+        
+    }
+}
 
 
 
