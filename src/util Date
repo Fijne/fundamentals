@@ -1,0 +1,13 @@
+import java.util.Date;
+
+public class JavaLibraries {
+    public static void main(String[] args) {
+        Date today = new Date();
+        int hours = today.getHours();
+        System.out.println(hours);
+        int minutes = today.getMinutes();
+        System.out.println(minutes);
+        String time = (hours + ":"  + minutes);
+        System.out.println(time);
+    }
+}
