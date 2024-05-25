@@ -1,0 +1,69 @@
+import java.util.Date;
+
+public class JavaLibraries {
+    public static void main(String[] args) {
+        Date today = new Date();
+        int hours = today.getHours();
+        System.out.println(hours);
+        int minutes = today.getMinutes();
+        System.out.println(minutes);
+        String time = (hours + ":"  + minutes);
+        System.out.println(time);
+    }
+}
+
+
+
+UPDATE: 
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class JavaLibraries {
+    public static void main(String[] args) {
+        Date today = new Date();
+
+        GregorianCalendar calendar = new GregorianCalendar();
+        calendar.setTime(today);
+        calendar.set(GregorianCalendar.DAY_OF_MONTH, calendar.get(GregorianCalendar.DAY_OF_MONTH) - 1);
+        System.out.println(calendar.getTime());
+
+
+        GregorianCalendar birthday = new GregorianCalendar(1936,3,16); // months in Greg.Cal. are 0 based!
+        Date birthdayDate = birthday.getTime();
+
+        System.out.println(today);
+        System.out.println(birthdayDate);
+        System.out.println(birthday);
+
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String prettyDate = sdf.format(birthdayDate);
+        System.out.println(prettyDate);
+
+        LocalDateTime theDateandTime = LocalDateTime.now();
+        LocalDateTime anotherDateandTime = LocalDateTime.of(2022,11,16,16,12);
+        LocalDate someDate = LocalDate.of(2022,11,16);
+        LocalTime sometime = LocalTime.from(anotherDateandTime);
+
+        System.out.println(theDateandTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")   ));
+        System.out.println(sometime);
+
+        LocalDate yesterday = LocalDate.now().minusDays(1);
+        System.out.println(yesterday);
+
+        LocalDate myBirthday = LocalDate.of(1995,3,19);
+        System.out.println(myBirthday);
+
+        Period difference= Period.between(myBirthday,yesterday);
+        System.out.println(" There are " + difference.getYears() + " years and " + difference.getMonths() + "months,and " +  difference.getDays() + "days between two days");
+
+
+    }
+}
