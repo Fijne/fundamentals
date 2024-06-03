@@ -1,0 +1,25 @@
+import java.net.URI;
+import java.net.URISyntaxException;
+
+public class Exceptions {
+    //public static void dividingByZero () {
+       // System.out.println(17/0);
+    }
+    public static void main(String[] args) {
+       // Integer [] integerArray = new Integer [] {1,2,3,4,5};
+      //  System.out.println(integerArray [5]);
+        //dividingByZero();
+
+
+        User user1 =new User("Matt",21);
+        User user2 =new User ("Sally", 24);
+
+        try { URI uri =new URI("https://www.google.com");
+            System.out.println("The uri was created");
+        }
+        catch (URISyntaxException e) {
+            System.out.println("the uri was not created");
+        }
+    }
+
+
