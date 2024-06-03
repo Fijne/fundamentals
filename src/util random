@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class RandomExample {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int randomInt = random.nextInt(100); // Generate a random integer between 0 and 99
+        System.out.println("Random Integer: " + randomInt);
+
+        double randomDouble = random.nextDouble(); // Generate a random double between 0.0 and 1.0
+        System.out.println("Random Double: " + randomDouble);
+    }
+}
