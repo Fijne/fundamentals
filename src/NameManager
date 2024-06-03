@@ -1,0 +1,82 @@
+public class NameManager {
+
+    String myName = "Tamta Sivsivadze";
+
+    //Methods first and last name
+    public String getFirstName() {
+        String[] values = myName.split(" ");
+        return values[0];
+    }
+
+    public String getSurname() {
+        String[] values = myName.split(" ");
+        return values[values.length - 1];
+    }
+// Main method to test the code
+
+    public static void main(String[] args) {
+        NameManager manager = new NameManager();
+        System.out.println("First Name: " + manager.getFirstName());
+        System.out.println("Surname: " + manager.getSurname());
+    }
+
+
+                public static void doSomething() {
+                    System.out.println("I am doing something");
+
+        }
+
+    }
+
+    ///public class StringManipulator {
+//
+//    String text;
+//
+//    public StringManipulator(String text) {
+//        this.text = text;
+//    }
+//
+//    // Method to get the first word
+//    public String getFirstWord() {
+//        String[] words = text.split(" ");
+//        return words[0];
+//    }
+//
+//    // Method to get the last word
+//    public String getLastWord() {
+//        String[] words = text.split(" ");
+//        return words[words.length - 1];
+//    }
+//
+//    // Method to get a substring
+//    public String getSubstring(int beginIndex, int endIndex) {
+//        return text.substring(beginIndex, endIndex);
+//    }
+//
+//    // Method to find the index of a word
+//    public int indexOfWord(String word) {
+//        return text.indexOf(word);
+//    }
+//
+//    // Method to convert to uppercase
+//    public String toUpperCase() {
+//        return text.toUpperCase();
+//    }
+//
+//    // Method to trim whitespace
+//    public String trimWhitespace() {
+//        return text.trim();
+//    }
+//
+//    // Main method for testing
+//    public static void main(String[] args) {
+//        StringManipulator manipulator = new StringManipulator("hello world from Java");
+//
+//        System.out.println("First Word: " + manipulator.getFirstWord());
+//        System.out.println("Last Word: " + manipulator.getLastWord());
+//        System.out.println("Substring (0, 5): " + manipulator.getSubstring(0, 5));
+//        System.out.println("Index of 'world': " + manipulator.indexOfWord("world"));
+//        System.out.println("Uppercase: " + manipulator.toUpperCase());
+//        System.out.println("Trimmed: " + manipulator.trimWhitespace());
+//    }
+//}
