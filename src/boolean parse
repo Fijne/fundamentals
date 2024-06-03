@@ -1,0 +1,14 @@
+public class sandra {
+    public static void main(String[] args) {
+        String person = "Sandra Burnside";
+        System.out.println(person.indexOf(7));
+        String firstName="Sandra"; String lastName="Burnside";
+        System.out.println(person.substring(7));
+
+        boolean StringpersonLengthisOdd= Boolean.parseBoolean("Sandra Burnside");
+        System.out.println(StringpersonLengthisOdd);
+
+        boolean StringpersonLengthiseven= Boolean.parseBoolean("Sandra Burnside");
+        System.out.println(StringpersonLengthiseven);
+        }
+}
