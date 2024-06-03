@@ -31,5 +31,5 @@ switch(testScore) {
         }
 
 
-
+ 
 // you can use SWITCH statements only with integers and Strings, not with doubles,floats or Booleans..
