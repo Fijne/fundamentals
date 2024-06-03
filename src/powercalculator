@@ -1,0 +1,30 @@
+//Exercise 5: Find the Power
+// Write a program that calculates and prints the value of 2^n (2 to the power of n)
+// where n is a positive integer entered by the user. Use a do-while loop to perform the multiplication.
+
+import java.util.Scanner;
+
+public class PowerCalculation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int base = 2;
+        int power;
+        int result = 1;
+
+        System.out.print("Enter a positive integer for the power of 2: ");
+        power = scanner.nextInt();
+
+        if (power < 0) {
+            System.out.println("The power must be a positive integer.");
+        } else {
+            int currentPower = 0;
+            do {
+                result *= base;
+                currentPower++;
+            } while (currentPower < power);
+
+            System.out.println("2 to the power of " + power + " is " + result);
+        }
+        scanner.close();
+    }
+}
