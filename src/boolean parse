@@ -12,3 +12,28 @@ public class sandra {
         System.out.println(StringpersonLengthiseven);
         }
 }
+##
+public class sandraBurn {
+    public static void main(String[] args) {
+        String person = "Sandra Burnside";
+        int spacePosition = person.indexOf(" ");
+        String Surname = person.substring(spacePosition + 1, person.length());
+        // boolean evenLength = Surname.length()%2==0 ? true:false;
+        boolean evenLength = Surname.length() % 2 == 0;
+        System.out.println(Surname);
+        System.out.println(evenLength);
+
+        System.out.println(Surname + " " + evenLength + " " + spacePosition);
+
+        String greeting = "Good Morning " + Surname;
+        System.out.println(greeting);
+
+        String colors = "blue,red,green,orange,purple";
+        String[] coloursArray = colors.split(", ");
+        for (String colour : coloursArray) {
+
+            System.out.println(colour);
+        }
+    }
+}
+
